@@ -133,13 +133,7 @@ function Meccanismo() {
                                         className="Meccanismo-Form-Control"
                                     />
                                 </Form.Group>
-                                <Button
-                                    variant="primary"
-                                    onClick={handleSearch}
-                                    className="Meccanismo-Button"
-                                >
-                                    Cerca Meteo
-                                </Button>
+                               
                                 {loading && <div className="Meccanismo-Loading-Message">Caricamento dati...</div>}
                                 {error && <Alert variant="danger" className="Meccanismo-Error-Message">Errore: {error}</Alert>}
                                 {weatherData && (
