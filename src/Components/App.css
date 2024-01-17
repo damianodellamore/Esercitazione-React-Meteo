@@ -1,7 +1,4 @@
 .App {
-    background-image: url('../assets/imgs/weatherbackground.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+   background-color: black;
     min-height: 100vh; 
 }
