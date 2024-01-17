@@ -1,4 +1,9 @@
 /* Stile per il container principale del componente Meccanismo */
+body {
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
 .Meccanismo-Container {
     text-align: center;
     background-color: #f7f7f7;
@@ -6,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 8px 6px -6px gray; /* Ombreggiatura aggiunta */
 }
 
 /* Stile per la card all'interno del componente Meccanismo */
@@ -13,8 +19,13 @@
     width: 400px;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Ombreggiatura migliorata */
     border-radius: 10px;
+    transition: transform 0.3s ease; /* Animazione all'hover */
+}
+
+.Meccanismo-Card:hover {
+    transform: scale(1.05); /* Effetto zoom all'hover */
 }
 
 /* Stile per il titolo della card */
@@ -45,11 +56,12 @@
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s; /* Animazione colore e trasformazione */
 }
 
 .Meccanismo-Button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px); /* Piccolo effetto di sollevamento */
 }
 
 /* Stile per il messaggio di caricamento */
@@ -66,12 +78,10 @@
     color: #ff0000;
 }
 
-
 .Meccanismo-Weather-Data {
     margin-top: 20px;
     font-size: 20px;
 }
-
 
 .Meccanismo-Data-Item {
     margin-bottom: 10px;
