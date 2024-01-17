@@ -148,9 +148,12 @@ function Meccanismo() {
                                         <h3>Previsioni per i prossimi giorni:</h3>
                                         <ul>
                                             {forecastData.map((forecast, index) => (
-                                                <li key={index}>
-                                                    Data: {new Date(forecast.dt * 1000).toLocaleDateString('it-IT')}, Temperatura: {forecast.main.temp.toFixed(2)}°C, Condizioni: {translateWeatherConditions(forecast.weather[0].description)}
-                                                </li>
+                                              <li key={index}>
+                                              Data: {new Date(forecast.dt * 1000).toLocaleDateString('it-IT')} 
+                                              Ora: {new Date(forecast.dt * 1000).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' })}, 
+                                              Temperatura: {forecast.main.temp.toFixed(2)}°C, 
+                                              Condizioni: {translateWeatherConditions(forecast.weather[0].description)}
+                                          </li>
                                             ))}
                                         </ul>
                                     </div>
