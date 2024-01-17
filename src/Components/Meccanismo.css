@@ -1,0 +1,79 @@
+/* Stile per il container principale del componente Meccanismo */
+.Meccanismo-Container {
+    text-align: center;
+    background-color: #f7f7f7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stile per la card all'interno del componente Meccanismo */
+.Meccanismo-Card {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Stile per il titolo della card */
+.Meccanismo-Card-Title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Stile per il campo di input della città */
+.Meccanismo-Form-Control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Stile per il pulsante Cerca Meteo */
+.Meccanismo-Button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Meccanismo-Button:hover {
+    background-color: #0056b3;
+}
+
+/* Stile per il messaggio di caricamento */
+.Meccanismo-Loading-Message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Stile per il messaggio di errore */
+.Meccanismo-Error-Message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff0000;
+}
+
+
+.Meccanismo-Weather-Data {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.Meccanismo-Data-Item {
+    margin-bottom: 10px;
+    color: #333;
+}
