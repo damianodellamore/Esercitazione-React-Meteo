@@ -8,7 +8,7 @@ import rainIcon from "../assets/imgs/rain.png";
 import snowIcon from "../assets/imgs/snow.png";
 import searchIcon from "../assets/imgs/search.png";
 import windIcon from "../assets/imgs/wind.png";
-
+import '../Components/Meccanismo.css'
 function Meccanismo() {
     const [city, setCity] = useState('');
     const [weatherData, setWeatherData] = useState(null);
@@ -119,11 +119,11 @@ function Meccanismo() {
     return (
         <div className="Meccanismo-Background">
             <Container className="mt-5">
-                <Row>
+                <Row className=''>
                     <Col md={{ span: 6, offset: 3 }}>
                         <Card>
                             <Card.Body>
-                                <Card.Title className="Meccanismo-Card-Title">Il Meteo, ora e nei prossimi 5 giorni.</Card.Title>
+                                <Card.Title className="bg-darkMeccanismo-Card-Title">Il Meteo, ora e nei prossimi 5 giorni.</Card.Title>
                                 <Form.Group>
                                     <Form.Control
                                         type="text"
